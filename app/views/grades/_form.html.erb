@@ -1,0 +1,7 @@
+<%= simple_form_for(grade) do |f| %>
+
+	<%= f.input :grade %>
+	<%= f.input :students_id, as: :select, collection: Student.all  %>
+	<%= f.input :subjects_id, as: :select, collection: Subject.all  %>
+	<%= f.button :submit %>
+<% end %>

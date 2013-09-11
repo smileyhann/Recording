@@ -1,0 +1,7 @@
+<%= simple_form_for(subject) do |f| %>
+
+	<%= f.input :subject_name %>
+	<%= f.input :description %>
+	<%= f.input :level, as: :select, collection: Level.all %>
+	<%= f.button :submit %>
+<% end %>

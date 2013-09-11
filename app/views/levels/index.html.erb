@@ -1,0 +1,22 @@
+				<br><br>
+				<h1>Summary</h1>
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @levels.each do |b| %>
+		<tr>
+			<td><%= b.level_name %></td>
+			<td>
+				<%= link_to "Show", level_path(b.id) %>
+				<%= link_to "Delete", level_path(b.id), :method => :delete %>
+				<%= link_to "Edit", edit_level_path(b.id) %>
+			</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

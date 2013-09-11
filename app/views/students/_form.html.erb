@@ -1,0 +1,9 @@
+<%= simple_form_for(student) do |f| %>
+
+	<%= f.input :name %>
+	<%= f.input :age %>
+	<%= f.input :address %>
+	<%= f.input :birthday %>
+	<%= f.input :level_id, as: :select, collection: Level.all %>
+	<%= f.button :submit %>
+<% end %>

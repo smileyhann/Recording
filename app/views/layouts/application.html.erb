@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recording</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<body class="container">
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+  <ul class="nav ">
+	<li><%= link_to "Students Data",students_path %></li>
+	<li><%= link_to "Add Student",new_student_path %></li>
+	<li><%= link_to "Grades Data",grades_path %></li>
+	<li><%= link_to "Add Grade",new_grade_path %></li>
+	<li><%= link_to "Levels Data",levels_path %></li>
+	<li><%= link_to "Add level",new_level_path %></li>
+	<li><%= link_to "Subjects Data",subjects_path %></li>
+	<li><%= link_to "Add Subject",new_subject_path %></li>
+    </ul>
+<%= yield %>
+
+</body>
+</html>
